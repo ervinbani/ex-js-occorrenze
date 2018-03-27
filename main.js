@@ -20,22 +20,22 @@ var array=[];
 
 for(var i=0;i<N;i++){
   array[i]=generaArray(min, max);
-
 }
 console.log(array);
 
 
-
+//funzione che riceve in ingresso due numeri min, max e genera un array di interi
+//con elementi compresi nel range min-max
 function generaArray(num1, num2){
   var arr=[];
   var i=0;
+
   do{
-    if(num1<=(Math.floor(Math.random()*num2+1))){
-        arr.push(Math.floor(Math.random()*num2+1));
+    var k=(Math.floor(Math.random()*num2+1));
+    if(num1<=k){
+        arr.push(k);
         i++;
     }
   }while(i<10)
   return arr;
-
-
 }
