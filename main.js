@@ -9,3 +9,5 @@ Una volta costruiti questi array, il programma dovrà generare una lista delle
  occorrenze.Nello specifico, guardando tutti i numeri inclusi in tutti
   gli array, dovrà indicare quante volte compare ogni numero in tutti gli array.
 */
+
+var min=parseInt("inserire un numero : ");
