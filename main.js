@@ -23,6 +23,13 @@ for(var i=0;i<N;i++){
 }
 console.log(array);
 
+//istruzione che trova le occorrene di ogni numero compreso fra min e max,
+//usando la funzione trovaoccorrenze
+}
+for (var i = min; i <= max; i++) {
+console.log("Il numero: " + i + " compare " + trovaOccorrenza(array, i));
+}
+
 
 //funzione che riceve in ingresso due numeri min, max e genera un array di interi
 //con elementi compresi nel range min-max
@@ -38,4 +45,18 @@ function generaArray(num1, num2){
     }
   }while(i<10)
   return arr;
+}
+
+//funzione che trova tutte le occorrenze delle variabili
+function trovaOccorrenza(array, num){
+  var counter=0;
+  for(var i=0;i<array.length;i++){
+    for(var j=0;j<array[i].length;j++){
+    if(array[i][j]==num){
+      counter++;
+    }
+  }
+
+  }
+  return counter;
 }
